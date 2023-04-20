@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1500 day💕💕</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Blaka&family=Dongle&family=Inter&family=Kurale&family=Lobster&family=Montserrat:ital,wght@1,500&family=Permanent+Marker&family=Poppins:wght@300;400;500&family=Shippori+Antique&family=Supermercado+One&family=Yellowtail&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+           
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            }
+        #countdown {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 100px;
+            color: rgb(219, 12, 78);
+            
+        }
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+        }
+        .img1 {
+            position: absolute;
+            top: 0;
+            
+        }
+        .img2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        @media only screen and (max-width: 600px) {
+  /* Styles for text when the screen size is 600px or less */
+  div {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://i.pinimg.com/originals/79/0d/e5/790de5ccbc96e7b203d6fd210badce50.png" class="img" alt="">
+    </div>
+    <div>
+        <img src="https://sdl-stickershop.line.naver.jp/products/0/0/1/1290567/android/stickers/11772269.png" class="img1" alt="">
+    </div>
+    <div id="countdown"></div>
+
+    <div class="img2">
+        <img src="https://media3.giphy.com/media/Yle9Yz9izeVRyiwavn/200w.gif?cid=6c09b952gb98ulxlzu7engehzv09io4291vlom685d12l26m&rid=200w.gif&ct=g"  alt="">
+    </div>
+  
+  
+</body>
+<script>
+    // Set the date we're counting down to
+var countDownDate = new Date("2023-05-23T00:00:00").getTime();
+
+// Update the countdown every second
+var x = setInterval(function() {
+
+  // Get the current date and time
+  var now = new Date().getTime();
+
+  // Calculate the distance between now and the countdown date
+  var distance = countDownDate - now;
+
+  // Calculate days, hours, minutes, and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the countdown in the "countdown" element
+  document.getElementById("countdown").innerHTML = days + "d💕" + hours + "h❤️ "
+  + minutes + "m😘" + seconds + "s😊";
+
+  // If the countdown is over, display a message
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+</html>
